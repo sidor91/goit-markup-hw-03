@@ -356,8 +356,10 @@ body {
 
 .project-list .item {
     width: ((100%-60px)/3);
+    /* width: 370px; */
     margin-right: 30px;
     margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
 }
 
 .project-list .item:nth-child(3n) {
@@ -368,7 +370,13 @@ body {
     margin-bottom: 0;
 }
 
+.project-image {
+    margin-bottom: 20px;
+}
+
 .project-title {
+    margin-bottom: 4px;
+    
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;

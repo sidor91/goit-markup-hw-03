@@ -49,11 +49,6 @@ body {
     text-decoration: none;
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 /* Хедер */
 
 .container {
@@ -154,6 +149,7 @@ body {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-bottom: 94px;
 }
 
 .hero-button, .category-button {
@@ -162,6 +158,9 @@ body {
 
 .hero-title {
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--white-color);
     font-weight: 900;
@@ -176,11 +175,12 @@ body {
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 216px;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: var(--accent-color);
     color: var(--white-color);
-    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -204,13 +204,20 @@ body {
 
 /* Features */
 
+.container.features {
+    margin-bottom: 94px;
+}
+
 .features-list {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .features-list .item {
-    width: 270px;
+    width: calc((100%-90px)/4);
+}
+
+.features-list .item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features-title {
@@ -236,18 +243,60 @@ body {
     margin-bottom: 50px;
 }
 
+.services.list {
+    display: flex;
+}
+
+.services img {
+    display: block;
+}
+
+.services .item {
+    width: calc((100%-60px)/3);
+    height: auto;
+}
+
+.services .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.services {
+    margin-bottom: 94px;
+}
+
 /* Team */
+
+.container.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team.list {
+    display: flex;
+}
+
+.team .item {
+    width: calc((100%-90px)/4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team .item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .section.secondary-color {
     background-color: var(--secondary-background-color);
 }
 
 .team .section-title {
-    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team-photo {
     margin-bottom: 30px;
+    display: block;
+    width: 100%;
 }
 
 .team-name {
@@ -262,6 +311,8 @@ body {
 }
 
 .team-position {
+    margin-bottom: 30px;
+    
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -297,11 +348,20 @@ body {
 }
 
 .address {
+    display: inline-block;
+    width: 231px;
+}
+
+.address-item {
     color: var(--white-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+.address .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-contacts .link {
@@ -311,7 +371,6 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
 
 
 /* Фільтр */
@@ -328,6 +387,7 @@ body {
 
 .category-button {
     display: inline-block;
+    padding: 6px 22px;
     border-radius: 4px;
     border: none;
 
@@ -347,6 +407,13 @@ body {
 }
 
 /* Портфоліо */
+
+.container.project {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+
 
 .project-list {
     display: flex;

@@ -9,7 +9,8 @@
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+  color: var(--navy-blue);
 	background-color: var(--white-color);
 }
 
@@ -45,7 +46,6 @@ a {
 	font-size: 36px;
 	line-height: 1.11;
 	letter-spacing: 0.02em;
-	color: var(--navy-blue);
 	text-align: center;
 	text-transform: capitalize;
 }
@@ -129,6 +129,7 @@ header {
 }
 
 .hero-button {
+  font-family: inherit;
 	background: var(--iris);
 	font-weight: 500;
 	line-height: 1.5;
@@ -161,17 +162,15 @@ header {
 	gap: 24px;
 }
 
-.features-list-iem-header {
+.features-list-item-header {
 	margin-bottom: 8px;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: var(--navy-blue);
 }
 
 .features-list-item-text {
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -215,12 +214,10 @@ header {
 	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 0.4px;
-	color: var(--navy-blue);
 }
 
 .team-card-text {
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 0.32px;
 	color: var(--slate);
@@ -265,12 +262,10 @@ header {
 	font-weight: 500;
 	line-height: 1.2;
 	letter-spacing: 0.4px;
-	color: var(--navy-blue);
 }
 
 .portfolio-item-text {
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 0.32px;
 	color: var(--slate);
@@ -290,7 +285,6 @@ header {
 	width: 264px;
 	color: var(--cloud);
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 0.32px;
 }

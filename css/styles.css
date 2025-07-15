@@ -10,7 +10,7 @@
 
 body {
 	font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
-  color: var(--navy-blue);
+	color: var(--navy-blue);
 	background-color: var(--white-color);
 }
 
@@ -129,7 +129,7 @@ header {
 }
 
 .hero-button {
-  font-family: inherit;
+	font-family: inherit;
 	background: var(--iris);
 	font-weight: 500;
 	line-height: 1.5;
